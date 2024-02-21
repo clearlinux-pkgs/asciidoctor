@@ -7,7 +7,7 @@
 #
 Name     : asciidoctor
 Version  : 2.0.21
-Release  : 1
+Release  : 2
 URL      : https://github.com/asciidoctor/asciidoctor/archive/v2.0.21/asciidoctor-2.0.21.tar.gz
 Source0  : https://github.com/asciidoctor/asciidoctor/archive/v2.0.21/asciidoctor-2.0.21.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,7 @@ Group    : Development/Tools
 License  : MIT
 Requires: asciidoctor-bin = %{version}-%{release}
 Requires: asciidoctor-license = %{version}-%{release}
+Requires: ruby
 BuildRequires : ruby
 # Suppress stripping binaries
 %define __strip /bin/true
@@ -107,7 +108,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1708474883
+export SOURCE_DATE_EPOCH=1708476503
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -141,7 +142,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1708474883
+export SOURCE_DATE_EPOCH=1708476503
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/asciidoctor
 cp %{_builddir}/asciidoctor-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/asciidoctor/9d157ff53ef9653004efadf1670c239286a8dd06 || :

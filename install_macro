@@ -1,0 +1,1 @@
+gem install --build-root %{buildroot} asciidoctor-*.gem

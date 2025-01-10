@@ -7,7 +7,7 @@
 #
 Name     : asciidoctor
 Version  : 2.0.23
-Release  : 4
+Release  : 5
 URL      : https://github.com/asciidoctor/asciidoctor/archive/v2.0.23/asciidoctor-2.0.23.tar.gz
 Source0  : https://github.com/asciidoctor/asciidoctor/archive/v2.0.23/asciidoctor-2.0.23.tar.gz
 Summary  : No detailed summary available
